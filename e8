@@ -1,0 +1,24 @@
+//8
+sudo apt-get install netsniff-ng
+sudo apt-get install -y netsniff-ng
+sudo netsniff-ng
+
+//9
+@echo off
+echo Detecting Viruses......
+:start
+cd C:\
+IF EXIST swing.bat goto infected
+IF NOT EXIST virus.bat goto clean
+:infected
+echo WARNING SWING.BAT VIRUS DETECTED!
+del swing.bat
+pause
+goto start
+:clean
+echo your System is secure now and virus has been deleted!
+pause
+exit
+
+
+%O|%O
